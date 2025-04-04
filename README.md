@@ -63,43 +63,6 @@ yarn dev
 - Поддръжка на мобилни устройства
 - Бърза зареждане на страниците
 
-## 🚀 Публикуване
-1. Създайте production build:
-```bash
-npm run build
-# или
-yarn build
-```
-
-2. Тествайте production build локално:
-```bash
-npm run preview
-# или
-yarn preview
-```
-
-3. Публикувайте на вашия хостинг:
-- Vercel (препоръчително)
-- Netlify
-- GitHub Pages
-- Firebase Hosting
-
-### Публикуване на Vercel
-1. Инсталирайте Vercel CLI:
-```bash
-npm install -g vercel
-```
-
-2. Влезте в акаунта си:
-```bash
-vercel login
-```
-
-3. Публикувайте:
-```bash
-vercel
-```
-
 ## 📁 Структура на проекта
 ```
 src/
