@@ -37,3 +37,9 @@ yarn-error.log*
 
 # Scripts folder (utility scripts not for production)
 scripts/
+
+# Google Cloud credentials
+*-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].json
+*.json.key
+*service-account*.json
+*serviceaccount*.json
