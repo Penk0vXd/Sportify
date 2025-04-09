@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+                http://www.w3.org/1999/xhtml
+                http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://sportify-bulgaria.com/</loc>
+    <lastmod>2024-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sportify-bulgaria.com/public/og-image.jpg</image:loc>
+      <image:title>Sportify - Вашият Фитнес Партньор в България</image:title>
+      <image:caption>Персонализирани фитнес тренировки в Сливен</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Workouts Page -->
+  <url>
+    <loc>https://sportify-bulgaria.com/workouts</loc>
+    <lastmod>2024-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sportify-bulgaria.com/public/images/workouts.jpg</image:loc>
+      <image:title>Тренировки в Sportify</image:title>
+      <image:caption>Разнообразни групови и индивидуални тренировки</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Exercises Page -->
+  <url>
+    <loc>https://sportify-bulgaria.com/exercises</loc>
+    <lastmod>2024-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://sportify-bulgaria.com/public/images/exercises.jpg</image:loc>
+      <image:title>Упражнения в Sportify</image:title>
+      <image:caption>Библиотека с ефективни фитнес упражнения</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Schedule Page -->
+  <url>
+    <loc>https://sportify-bulgaria.com/schedule</loc>
+    <lastmod>2024-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sportify-bulgaria.com/public/images/schedule.jpg</image:loc>
+      <image:title>График на Тренировките</image:title>
+      <image:caption>Седмичен график на тренировките в Sportify</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Calorie Calculator Page -->
+  <url>
+    <loc>https://sportify-bulgaria.com/calorie-calculator</loc>
+    <lastmod>2024-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sportify-bulgaria.com/public/images/calorie-calculator.jpg</image:loc>
+      <image:title>Калкулатор за Калории</image:title>
+      <image:caption>Изчислете дневните си нужди от калории</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://sportify-bulgaria.com/contact</loc>
+    <lastmod>2024-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://sportify-bulgaria.com/public/images/contact.jpg</image:loc>
+      <image:title>Контакти Sportify</image:title>
+      <image:caption>Свържете се с нас за повече информация</image:caption>
+    </image:image>
+  </url>
+
+</urlset> 

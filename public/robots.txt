@@ -1,0 +1,43 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sportify-bulgaria.com/sitemap.xml
+
+# Disallow admin and private routes
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /login
+Disallow: /register
+Disallow: /404
+Disallow: /error
+Disallow: /maintenance
+Disallow: /tmp/
+
+# Crawl-delay
+Crawl-delay: 5
+
+# Specific instructions for Google
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Cache directive
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /public/images/
+Allow: /assets/images/
+
+# Instructions for Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Yandex instructions
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Disallow: /private/ 

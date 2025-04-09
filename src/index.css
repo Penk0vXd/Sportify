@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #00c4ff;
+  --primary-dark: #00a6d9;
+  --primary-light: #67efff;
+  --background-light: #ffffff;
+  --background-dark: #111827;
+  --text-dark: #111827;
+  --text-light: #f9fafb;
+  --card-dark: #1f2937;
+  --card-light: #ffffff;
+}
+
+/* Base styles */
+@layer base {
+  html {
+    /* Allow click-to-anchor smooth scrolling but not for route changes */
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-white text-gray-900 transition-colors duration-200;
+  }
+
+  body.dark {
+    @apply bg-gray-900 text-white;
+  }
+
+  input, select, textarea {
+    @apply bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600;
+  }
+
+  /* Ensure dropdowns have proper background in dark mode */
+  option {
+    @apply bg-white dark:bg-gray-700 text-gray-900 dark:text-white;
+  }
+}
+
+/* Component styles */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-[#00c4ff] text-white hover:bg-[#00a6d9];
+}
+
+.btn-secondary {
+  @apply bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg transition-colors duration-200;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  @apply fixed bottom-4 right-4 z-50 p-3 rounded-full bg-[#00c4ff] text-white shadow-lg 
+         hover:bg-[#00a6d9] transition-all duration-200 hover:scale-110;
+}
+
+/* Workout card styles */
+.workout-card {
+  @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
+         rounded-lg shadow-sm transition-all duration-200;
+}
+
+.workout-card:hover {
+  @apply border-[#00c4ff] shadow-lg;
+}
+
+/* Form elements */
+input:focus, select:focus, textarea:focus {
+  @apply border-[#00c4ff] ring-2 ring-[#00c4ff] ring-opacity-50;
+}
+
+/* Modal styles */
+.modal-content {
+  @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-white;
+}
+
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Enhanced form elements */
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px rgba(0, 196, 255, 0.2) !important;
+}
+
+/* Button enhancements */
+button:not(:disabled) {
+  transform: translateY(0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 196, 255, 0.2);
+}
+
+/* Calendar/Schedule enhancements */
+.schedule-day {
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+body.dark .schedule-day {
+  border-color: #334155;
+  background-color: var(--card-dark) !important;
+}
+
+.schedule-day:hover {
+  box-shadow: 0 4px 12px rgba(0, 196, 255, 0.1);
+}
+
+/* Dark mode modal */
+body.dark .modal-content {
+  background-color: var(--card-dark);
+  color: var(--text-light);
+}
